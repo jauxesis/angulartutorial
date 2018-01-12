@@ -1,0 +1,9 @@
+<p>
+  login works!
+</p>
+
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+  <input type="text" name="email" formControlName="email" placeholder="Enter email">
+  <input type="password" name="password" formControlName="password" placeholder="Enter password">
+  <input type="submit" value="Submit">
+</form>
