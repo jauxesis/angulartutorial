@@ -1,0 +1,81 @@
+
+
+
+<div class="container">
+  <h2>Contract Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+      
+        <th>Description</th>
+        <th>File hash</th>
+        <th>contract Address</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr >
+       
+        <td>{{contractdetails.description}}</td>
+        <td>{{contractdetails.fileHash}}</td>
+        <td>{{contractAddress}}</td>
+        <td>{{contractdetails.price}}</td>
+      
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<hr>
+
+
+<div class="container">
+  <h2>Confirm buyer Details</h2>
+  <a [routerLink]="['/getbuyerbiddetails']"> Confirm bid</a>
+  <table class="table">
+    <thead>
+      <tr>
+      
+        <th>bidId</th>
+        <th>Price</th>
+        <th>Address</th>
+        
+      </tr>
+    </thead>
+    <tbody >
+      <tr >
+       
+        <td>{{buyerDetails.bidId}}</td>
+        <td>{{buyerDetails.price}}</td>
+        <td>{{buyerDetails.address}}</td>
+      
+      
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr>
+
+<div class="container">
+  <h2>Confirm buyer Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+      
+        <th>owner address</th>
+        <th>broker address</th>
+        <th>buyer address</th>
+        
+      </tr>
+    </thead>
+    <tbody >
+      <tr >
+        <td>{{ownerDetails.sellerAddress}}</td>
+        <td>{{ownerDetails.brokerAddress}}</td>
+        <td>{{ownerDetails.buyerAddress}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

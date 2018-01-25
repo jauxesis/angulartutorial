@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Contract Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Bid id</th>
+        <th>Address</th>
+      
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor ="let ls of bidlist">
+        <td>{{ls.bidId}}</td>
+        <td>{{ls.address}}</td>
+        <td>{{ls.price}}</td>
+        <td>  <button type="button" (click)='confirmBid(ls)' class="btn btn-default">Confirm</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

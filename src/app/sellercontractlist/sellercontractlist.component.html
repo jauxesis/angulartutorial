@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h2>Contract Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>File hash</th>
+        <th>contract Address</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor ="let ls of contractlist">
+        <td>{{ls.Id}}</td>
+        <td>{{ls.description}}</td>
+        <td>{{ls.fileHash}}</td>
+        <td><a (click)="contractDetails(ls.contractAddress)">{{ls.contractAddress}}</a></td>
+        <td>{{ls.price}}</td>
+        <td> <button type="button" (click)="open(ls)"  class="btn btn-default">add broker</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<ng-template #successmodal>
+ 
+    <div class="modal-body customModalHeight" id="normalModalBody">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="donefinally()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      <div class="tab-content text-center">
+          <select [(ngModel)]="brokerAddress" (change)="brokerSelection()">
+            <option *ngFor="let x of brokerList" [value]="x.address">{{x.username}}</option>
+        </select>
+        <button type="button" (click)="addBroker()"  class="btn btn-default">Add broker now</button>
+      </div>
+    </div>
+</ng-template>

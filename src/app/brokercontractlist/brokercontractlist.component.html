@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Contract Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>File hash</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor ="let ls of contractlist">
+        <td>{{ls.Id}}</td>
+        <td>{{ls.description}}</td>
+        <td>{{ls.fileHash}}</td>
+        <td>{{ls.price}}</td>
+        <td> <button type="button" (click)="open(ls)"  class="btn btn-default">add seller</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<ng-template #successmodal>
+  
+     <div class="modal-body customModalHeight" id="normalModalBody">
+         <button type="button" class="close pull-right" aria-label="Close" (click)="donefinally()">
+             <span aria-hidden="true">&times;</span>
+         </button>
+       <div class="tab-content text-center">
+           <select [(ngModel)]="brokerAddress" (change)="brokerSelection()">
+             <option *ngFor="let x of buyerlist" [value]="x.address">{{x.username}}</option>
+         </select>
+         <button type="button" (click)="addBuyer()"  class="btn btn-default">Add broker now</button>
+       </div>
+     </div>
+ </ng-template>

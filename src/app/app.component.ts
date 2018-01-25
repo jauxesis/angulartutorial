@@ -22,7 +22,7 @@ export class AppComponent {
     public route:ActivatedRoute,
     private titleService:Title
   ){
-
+    localStorage.setItem("LandRegistryURL","http://192.81.215.180:8080/landRegistry/");
   }
 
   ngOnInit(){

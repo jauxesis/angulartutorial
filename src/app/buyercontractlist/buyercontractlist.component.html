@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Contract Details</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>File hash</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor ="let ls of contractlist">
+        <td>{{ls.Id}}</td>
+        <td>{{ls.description}}</td>
+        <td>{{ls.fileHash}}</td>
+        <td>{{ls.price}}</td>
+        <td> <input type="text"  id="price" [(ngModel)]="bidprice" ></td>
+        <td>  <button type="button" (click)='setBid(ls)' class="btn btn-default">Bid</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
