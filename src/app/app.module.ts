@@ -25,6 +25,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AlertModule } from 'ngx-bootstrap';
 import { CollapseModule } from 'ngx-bootstrap';
 import { ContractdetailsComponent } from './contractdetails/contractdetails.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { LoginheaderComponent } from './layout/loginheader/loginheader.component';
+import { HomenavbarComponent } from './layout/homenavbar/homenavbar.component';
+import { HomefooterComponent } from './layout/homefooter/homefooter.component';
 
 
 @NgModule({
@@ -41,6 +45,10 @@ import { ContractdetailsComponent } from './contractdetails/contractdetails.comp
     BuyercontractlistComponent,
     GetbuyerbiddetailsComponent,
     ContractdetailsComponent,
+    FooterComponent,
+    LoginheaderComponent,
+    HomenavbarComponent,
+    HomefooterComponent,
     
   ],
   imports: [

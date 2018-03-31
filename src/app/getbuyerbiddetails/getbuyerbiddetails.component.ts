@@ -41,7 +41,7 @@ export class GetbuyerbiddetailsComponent implements OnInit {
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "Error";
          }
        )
     
@@ -64,7 +64,7 @@ export class GetbuyerbiddetailsComponent implements OnInit {
       },
       e=>{
         alert("Contract not found");
-        this.message = "Invalid user";
+        this.message = "Error";
       }
     )
    }

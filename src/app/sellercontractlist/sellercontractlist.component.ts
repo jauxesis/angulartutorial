@@ -59,7 +59,7 @@ brokerList:any;
         },
         e=>{
           alert("Contract not found");
-          this.message = "Invalid user";
+          this.message = "";
         }
       )
    
@@ -82,7 +82,7 @@ brokerList:any;
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "";
          }
        )
     

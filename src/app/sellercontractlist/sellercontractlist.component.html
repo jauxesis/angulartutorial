@@ -1,27 +1,48 @@
-<app-navbar></app-navbar>
+<app-homenavbar></app-homenavbar>
 <div class="container">
   <h2>Contract Details</h2>
-  <table class="table">
-    <thead>
+
+  <div class="table-responsive">
+    
+
+  <table class="table ctable">
+    <thead style="background-color:#122e43">
       <tr>
         <th>Id</th>
         <th>Description</th>
-        <th>File hash</th>
-        <th>contract Address</th>
+        <!-- <th>File hash</th>
+        <th>contract Address</th> -->
+        <th>Details</th>
         <th>Price</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody >
       <tr *ngFor ="let ls of contractlist">
         <td>{{ls.Id}}</td>
         <td>{{ls.description}}</td>
-        <td>{{ls.fileHash}}</td>
-        <td><a (click)="contractDetails(ls.contractAddress)">{{ls.contractAddress}}</a></td>
+        <!-- <td>{{ls.fileHash}}</td>
+        <td><a (click)="contractDetails(ls.contractAddress)">{{ls.contractAddress}}</a></td> -->
+        <td style="text-align:left">
+          <p>
+            <b>File Hash:</b>{{ls.fileHash}}
+          </p>
+          <p>
+            <b>Contract Address:</b>
+            <a (click)="contractDetails(ls.contractAddress)">
+              {{ls.contractAddress}}&nbsp;&nbsp;
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </a>
+          </p>
+        </td>
         <td>{{ls.price}}</td>
         <td> <button type="button" (click)="open(ls)"  class="btn btn-default">add broker</button></td>
       </tr>
     </tbody>
   </table>
+
+  </div>
+
 </div>
 
 
@@ -40,3 +61,5 @@
       </div>
     </div>
 </ng-template>
+
+<app-homefooter></app-homefooter>

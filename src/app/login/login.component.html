@@ -1,30 +1,232 @@
-<div class="container">
-  <h2>Land Registry</h2>
-  <div class="row">
-    <div class="col col-sm-4 col-sm-offset-4">
-      <p style="text-align:center;color:red">{{message}}</p>
-      <form [formGroup]="myForm" (ngSubmit)="submit()">
-        <div class="form-group">
-          <label for="email">Username:</label>
-          <input type="email" class="form-control" id="email" [(ngModel)]="username" formControlName="username" placeholder="Enter username" name="email">
-        </div>
-        <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd" [(ngModel)]="password" formControlName="password" placeholder="Enter password"  name="pwd">
-        </div>
-        <div class="checkbox">
-          <label class="radio-inline">
-            <input type="radio" name="optradio" formControlName="optradio" value="0">Seller
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="optradio" formControlName="optradio" value="1">Broker
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="optradio" formControlName="optradio" value="2">Buyer
-          </label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+<!-- <div class="container-fluid">
+    <div class="jumbotron">
+        <h2>Land Registry</h2>
     </div>
-  </div>
 </div>
+<div class="container">
+  
+  
+  <div class="row">
+
+    <div class="col col-sm-4 col-sm-offset-2">
+      <img src="">
+    </div>
+
+    <div class="col col-sm-4 col-sm-offset-2">
+      <div class="loginForm">
+        <p style="text-align:center;color:red">{{message}}</p>
+        <form [formGroup]="myForm" (ngSubmit)="submit()">
+          <div class="form-group">
+            <label for="email">Username:</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="username" formControlName="username" placeholder="Enter username" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" [(ngModel)]="password" formControlName="password" placeholder="Enter password"  name="pwd">
+          </div>
+          <div class="checkbox">
+            <label class="radio-inline">
+              <input type="radio" name="optradio" formControlName="optradio" value="0">Seller
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" formControlName="optradio" value="1">Broker
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio" formControlName="optradio" value="2">Buyer
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div> -->
+
+<!--// Main Wrapper \\-->
+<div class="political-main-wrapper">
+
+  <app-loginheader></app-loginheader>
+
+
+  <!--// Main Banner \\-->
+	<div class="political-banner">
+
+    <!--// Slider \\-->
+    <div class="political-banner-layer">
+      <span class="political-banner-transparent"></span>
+      <img src="assets/lib/image/Delhi_India_Government2.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="political-banner-thumb">
+              <figure><img src="assets/lib/image/sansad2.png" alt=""></figure>
+              <div class="political-banner-thumb-text">
+                <h2><a href="404.html"><small>“</small> Unity, Progress with <span>lots of</span> Solidity <small>”</small></a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="political-banner-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 right">
+              <div class="political-banner-form">
+                <h1>Loyalty of the law-making power to the executives.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="political-banner-layer">
+      <span class="political-banner-transparent"></span>
+      <img src="assets/lib/political/extra-images/banner-1.jpg" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="political-banner-thumb">
+              <figure><img src="assets/lib/political/extra-images/banner-thumb-img2.jpg" alt=""></figure>
+              <div class="political-banner-thumb-text">
+                <h2><a href="404.html"><small>“</small> Unity, Progress with <span>lots of</span> Solidity <small>”</small></a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="political-banner-caption">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 right">
+              <div class="political-banner-form">
+                <h1>Loyalty of the law-making power to the executives.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--// Slider \\-->
+      
+  </div>
+  <!--// Main Banner \\-->
+  
+
+  <div class="political-main-content">
+    <!--// Main Section \\-->
+		<div class="political-main-section political-service-listfull">
+      <div class="container">
+    
+        <div class="political-fancy-title">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Join US</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+        <!-- <h2>Land Registry</h2> -->
+    
+        
+        <div class="row">
+    
+          <div class="col col-sm-4 col-sm-offset-2">
+            <img src="assets/lib/image/stambh.png" class="logoSigin">
+          </div>
+              
+          <div class="col col-sm-4 col-sm-offset-2">
+    
+            <div class="political-contact-form">
+              <!-- <h2 class="political-section-heading">Sign In Now</h2> -->
+              <p>Sed vulputate elementum aliquam. Nunc vel efficitur ante. Ut gravida nulla id ornare sodales. Aenean aliquam mauris purus.</p>
+              <p style="text-align:center;color:red">{{message}}</p>
+              <form [formGroup]="myForm" (ngSubmit)="submit()">
+                <ul>
+                  <li>
+                      <input type="email" class="form-control" id="email" [(ngModel)]="username" formControlName="username" placeholder="Enter username" name="email">    
+                  </li>
+                  <li>
+                      <input type="password" class="form-control" id="pwd" [(ngModel)]="password" formControlName="password" placeholder="Enter password"  name="pwd">                  
+                  </li>
+                  <li>
+                      
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" formControlName="optradio" value="0">Seller
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" formControlName="optradio" value="1">Broker
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" formControlName="optradio" value="2">Buyer
+                          </label>
+                        
+                  </li>
+                  <li><input type="submit" value="Submit Now" class=""></li>
+                </ul>
+              </form>
+            </div>
+    
+            
+          </div>
+          
+        </div>
+      </div>
+      </div>
+      <!--// Main Section \\-->
+  </div>
+
+
+  
+  
+
+  <div class="political-main-content">
+    <!--// Main Section \\-->
+		<div class="political-main-section political-service-listfull">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-md-6">
+              <div class="political-service-list">
+                <ul>
+                  <li>
+                    <i class="icon church-eye"></i>
+                    <h3>Mission</h3>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut tinci dunt risus sit amet arcu sollicitudin</p>
+                  </li>
+                  <li>
+                    <i class="icon church-interface"></i>
+                    <h3>Election</h3>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut tinci dunt risus sit amet arcu sollicitudin</p>
+                  </li>
+                  <li>
+                    <i class="icon church-arrow2"></i>
+                    <h3>Issues</h3>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut tinci dunt risus sit amet arcu sollicitudin</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <figure class="political-service-add">
+                <img src="assets/lib/political/extra-images/service-add-img.jpg" alt="">
+                <figcaption>
+                  <h2>Absolutely <span>New Approach</span> To Politics</h2>
+                  <a href="contact-us.html" class="political-add-btn">Contact Us</a>
+                  <p>Call us toll free: <span>(012)</span> 345 - 6789</p>
+                </figcaption>
+              </figure>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <!--// Main Section \\-->
+  </div>
+
+
+</div>    
+<app-footer></app-footer>

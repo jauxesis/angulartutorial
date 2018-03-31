@@ -1,0 +1,42 @@
+/* .jumbotron {
+    color: #fff;
+    background-color: #5c304f;
+}
+@media screen and (min-width:768px){
+    .jumbotron {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border: 0;
+        border-radius: 0;
+    }
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.loginForm {
+    background-color: #f9d5d5;
+    padding: 2%;
+    border-radius: 2%;
+    box-shadow: 4px 5px 15px 2px grey;
+} */
+
+input[type="password"] {
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #f3f3f3;
+    font-size: 12px;
+    padding-left: 16px;
+}
+.political-contact-form form ul li{
+    width: 100%;
+}
+
+img.logoSigin {
+    width: 70%;
+    height: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

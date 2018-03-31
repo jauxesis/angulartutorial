@@ -41,8 +41,8 @@ export class BuyercontractlistComponent implements OnInit {
        alert(body.result.transactionHash);
       },
       e=>{
-        alert("Contract not found");
-        this.message = "Invalid user";
+      //  alert("Contract not found");
+        this.message = "error";
       }
     )
   }
@@ -53,11 +53,13 @@ export class BuyercontractlistComponent implements OnInit {
          d=>{
            let dt = JSON.parse(JSON.stringify(d));
            let body = JSON.parse(dt._body);
-           this.contractlist.push=body.result;
+           console.log("result   ",body.result);
+           this.contractlist=body.result;
+
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "Error";
          }
        )
    }

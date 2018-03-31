@@ -57,7 +57,7 @@ export class BrokercontractlistComponent implements OnInit {
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "Error";
          }
        )
     
@@ -101,7 +101,7 @@ export class BrokercontractlistComponent implements OnInit {
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "Error";
          }
        )
    }

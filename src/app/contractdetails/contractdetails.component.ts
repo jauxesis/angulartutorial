@@ -43,7 +43,7 @@ export class ContractdetailsComponent implements OnInit {
          },
          e=>{
            alert("Contract not found");
-           this.message = "Invalid user";
+           this.message = "Error";
          }
        )
     
@@ -65,7 +65,7 @@ export class ContractdetailsComponent implements OnInit {
       },
       e=>{
         alert("Contract not found");
-        this.message = "Invalid user";
+        this.message = "Error";
       }
     )
  
@@ -87,7 +87,7 @@ getOwnerDetails(){
     },
     e=>{
       alert("Contract not found");
-      this.message = "Invalid user";
+      this.message = "Error";
     }
   )
 
